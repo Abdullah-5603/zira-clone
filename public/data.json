@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "admin",
+      "password": "1234"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "Zira Project",
+      "tasks": [
+        {
+          "id": "t1",
+          "title": "Build Login",
+          "status": "To Do"
+        },
+        {
+          "id": "t2",
+          "title": "Create Board UI",
+          "status": "In Progress"
+        },
+        {
+          "id": "t3",
+          "title": "Test localStorage logic",
+          "status": "Done"
+        },
+        {
+          "id": "t4",
+          "title": "Refactor Sass styles",
+          "status": "In Progress"
+        }
+      ]
+    }
+  ]
+}
