@@ -17,22 +17,128 @@
                 {
                     "id": "t1",
                     "title": "Build Login",
-                    "status": "To Do"
+                    "description": "Implement user authentication with email/password and integrate basic form validation.",
+                    "assignee": "Liam Parker",
+                    "priority": "High",
+                    "status": "To Do",
+                    "dueDate": "2025-06-03",
+                    "comments": [
+                        {
+                            "author": "Liam Parker",
+                            "date": "2025-05-20",
+                            "comment": "Will use JWT for auth and bcrypt for password hashing."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st1-1",
+                            "title": "Create login form UI",
+                            "status": "To Do"
+                        },
+                        {
+                            "id": "st1-2",
+                            "title": "Implement login API integration",
+                            "status": "To Do"
+                        }
+                    ],
+                    "attachments": []
                 },
                 {
                     "id": "t2",
                     "title": "Create Board UI",
-                    "status": "In Progress"
+                    "description": "Design and develop a drag-and-drop interface for project boards.",
+                    "assignee": "Sophia Reed",
+                    "priority": "Medium",
+                    "status": "In Progress",
+                    "dueDate": "2025-06-05",
+                    "comments": [
+                        {
+                            "author": "Sophia Reed",
+                            "date": "2025-05-22",
+                            "comment": "Basic layout complete. Integrating react-beautiful-dnd."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st2-1",
+                            "title": "Build board column layout",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st2-2",
+                            "title": "Add draggable task cards",
+                            "status": "In Progress"
+                        }
+                    ],
+                    "attachments": [
+                        {
+                            "filename": "board_ui_mockup.png",
+                            "url": "https://zira.example.com/docs/board_ui_mockup.png"
+                        }
+                    ]
                 },
                 {
                     "id": "t3",
                     "title": "Test localStorage logic",
-                    "status": "Done"
+                    "description": "Ensure data persistence across page reloads using localStorage for saving board state.",
+                    "assignee": "Ethan Wright",
+                    "priority": "Low",
+                    "status": "Done",
+                    "dueDate": "2025-05-18",
+                    "comments": [
+                        {
+                            "author": "Ethan Wright",
+                            "date": "2025-05-17",
+                            "comment": "Test cases written, working as expected."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st3-1",
+                            "title": "Save board state to localStorage",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st3-2",
+                            "title": "Restore board state from localStorage",
+                            "status": "Done"
+                        }
+                    ],
+                    "attachments": []
                 },
                 {
                     "id": "t4",
                     "title": "Refactor Sass styles",
-                    "status": "In Progress"
+                    "description": "Organize and optimize Sass files for better maintainability and theme support.",
+                    "assignee": "Isabella Moore",
+                    "priority": "Medium",
+                    "status": "In Progress",
+                    "dueDate": "2025-06-07",
+                    "comments": [
+                        {
+                            "author": "Isabella Moore",
+                            "date": "2025-05-21",
+                            "comment": "Modularizing variables and mixins now."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st4-1",
+                            "title": "Create Sass partials for layout",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st4-2",
+                            "title": "Add theme support variables",
+                            "status": "To Do"
+                        }
+                    ],
+                    "attachments": [
+                        {
+                            "filename": "sass_structure_guide.pdf",
+                            "url": "https://zira.example.com/docs/sass_structure_guide.pdf"
+                        }
+                    ]
                 }
             ]
         },
@@ -45,17 +151,99 @@
                 {
                     "id": "t5",
                     "title": "Design dashboard layout",
-                    "status": "To Do"
+                    "description": "Create a clean, responsive dashboard for viewing sales metrics and customer information.",
+                    "assignee": "Emily Davis",
+                    "priority": "High",
+                    "status": "To Do",
+                    "dueDate": "2025-06-01",
+                    "comments": [
+                        {
+                            "author": "Emily Davis",
+                            "date": "2025-05-20",
+                            "comment": "Wireframes are prepared, waiting for design approval."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st5-1",
+                            "title": "Draft UI mockups",
+                            "status": "To Do"
+                        },
+                        {
+                            "id": "st5-2",
+                            "title": "Design responsive layout",
+                            "status": "To Do"
+                        }
+                    ],
+                    "attachments": [
+                        {
+                            "filename": "dashboard_wireframe.pdf",
+                            "url": "https://apollocrm.com/docs/dashboard_wireframe.pdf"
+                        }
+                    ]
                 },
                 {
                     "id": "t6",
                     "title": "Integrate REST API",
-                    "status": "In Progress"
+                    "description": "Connect frontend components to the backend API to fetch and update customer data.",
+                    "assignee": "Daniel Kim",
+                    "priority": "Medium",
+                    "status": "In Progress",
+                    "dueDate": "2025-06-05",
+                    "comments": [
+                        {
+                            "author": "Daniel Kim",
+                            "date": "2025-05-22",
+                            "comment": "Customer endpoints integration is halfway done."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st6-1",
+                            "title": "Connect customer endpoints",
+                            "status": "In Progress"
+                        },
+                        {
+                            "id": "st6-2",
+                            "title": "Handle API error responses",
+                            "status": "To Do"
+                        }
+                    ],
+                    "attachments": []
                 },
                 {
                     "id": "t7",
                     "title": "Add lead import feature",
-                    "status": "To Do"
+                    "description": "Allow users to import leads via CSV and map fields to CRM database.",
+                    "assignee": "Mia Thompson",
+                    "priority": "High",
+                    "status": "To Do",
+                    "dueDate": "2025-06-12",
+                    "comments": [
+                        {
+                            "author": "Mia Thompson",
+                            "date": "2025-05-18",
+                            "comment": "Researching CSV parsing libraries."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st7-1",
+                            "title": "Build CSV upload component",
+                            "status": "To Do"
+                        },
+                        {
+                            "id": "st7-2",
+                            "title": "Implement field mapping logic",
+                            "status": "To Do"
+                        }
+                    ],
+                    "attachments": [
+                        {
+                            "filename": "lead_import_spec.docx",
+                            "url": "https://apollocrm.com/docs/lead_import_spec.docx"
+                        }
+                    ]
                 }
             ]
         },
@@ -68,17 +256,99 @@
                 {
                     "id": "t8",
                     "title": "Build student dashboard",
-                    "status": "Done"
+                    "description": "Create a responsive dashboard showing course progress, upcoming assignments, and announcements.",
+                    "assignee": "Ava Johnson",
+                    "priority": "High",
+                    "status": "Done",
+                    "dueDate": "2025-05-12",
+                    "comments": [
+                        {
+                            "author": "Ava Johnson",
+                            "date": "2025-05-10",
+                            "comment": "Integrated real-time course tracking successfully."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st8-1",
+                            "title": "Design dashboard UI",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st8-2",
+                            "title": "Connect API for student data",
+                            "status": "Done"
+                        }
+                    ],
+                    "attachments": [
+                        {
+                            "filename": "student_dashboard_mockup.png",
+                            "url": "https://edutrackindia.com/docs/student_dashboard_mockup.png"
+                        }
+                    ]
                 },
                 {
                     "id": "t9",
                     "title": "Implement quiz module",
-                    "status": "In Progress"
+                    "description": "Develop a quiz system with auto-grading, timer, and question banks.",
+                    "assignee": "James Lee",
+                    "priority": "Medium",
+                    "status": "In Progress",
+                    "dueDate": "2025-06-01",
+                    "comments": [
+                        {
+                            "author": "James Lee",
+                            "date": "2025-05-20",
+                            "comment": "Question schema is ready, working on frontend now."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st9-1",
+                            "title": "Design question schema",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st9-2",
+                            "title": "Develop frontend quiz interface",
+                            "status": "In Progress"
+                        }
+                    ],
+                    "attachments": []
                 },
                 {
                     "id": "t10",
                     "title": "Setup database schema",
-                    "status": "Done"
+                    "description": "Design and implement database models for users, courses, quizzes, and progress tracking.",
+                    "assignee": "Olivia Brown",
+                    "priority": "High",
+                    "status": "Done",
+                    "dueDate": "2025-05-08",
+                    "comments": [
+                        {
+                            "author": "Olivia Brown",
+                            "date": "2025-05-07",
+                            "comment": "Schema finalized and integrated with backend."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st10-1",
+                            "title": "Design ER diagram",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st10-2",
+                            "title": "Implement MongoDB collections",
+                            "status": "Done"
+                        }
+                    ],
+                    "attachments": [
+                        {
+                            "filename": "db_schema_edutrack.pdf",
+                            "url": "https://edutrackindia.com/docs/db_schema_edutrack.pdf"
+                        }
+                    ]
                 }
             ]
         },
@@ -91,17 +361,94 @@
                 {
                     "id": "t11",
                     "title": "Develop workout tracker",
-                    "status": "To Do"
+                    "description": "Build a module that allows users to log and track workouts including sets, reps, and duration.",
+                    "assignee": "Liam Carter",
+                    "priority": "High",
+                    "status": "To Do",
+                    "dueDate": "2025-06-10",
+                    "comments": [
+                        {
+                            "author": "Liam Carter",
+                            "date": "2025-05-18",
+                            "comment": "Working on defining workout schema."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st11-1",
+                            "title": "Design workout data model",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st11-2",
+                            "title": "Implement tracking logic",
+                            "status": "To Do"
+                        }
+                    ],
+                    "attachments": [
+                        {
+                            "filename": "workout_tracker_specs.pdf",
+                            "url": "https://fitlifeapp.com/docs/workout_tracker_specs.pdf"
+                        }
+                    ]
                 },
                 {
                     "id": "t12",
                     "title": "Create user profile page",
-                    "status": "In Progress"
+                    "description": "Develop a profile page that displays user info, fitness stats, and preferences.",
+                    "assignee": "Sophia Martinez",
+                    "priority": "Medium",
+                    "status": "In Progress",
+                    "dueDate": "2025-05-28",
+                    "comments": [
+                        {
+                            "author": "Sophia Martinez",
+                            "date": "2025-05-21",
+                            "comment": "Basic layout is done; integrating backend data."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st12-1",
+                            "title": "Design UI layout",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st12-2",
+                            "title": "Bind user data from API",
+                            "status": "In Progress"
+                        }
+                    ],
+                    "attachments": []
                 },
                 {
                     "id": "t13",
                     "title": "Test daily goals notification",
-                    "status": "Done"
+                    "description": "Ensure that daily fitness goal notifications trigger correctly based on user settings.",
+                    "assignee": "Noah Patel",
+                    "priority": "Low",
+                    "status": "Done",
+                    "dueDate": "2025-05-15",
+                    "comments": [
+                        {
+                            "author": "Noah Patel",
+                            "date": "2025-05-12",
+                            "comment": "Test cases written and passed for daily reminders."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st13-1",
+                            "title": "Create test cases",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st13-2",
+                            "title": "Run notification tests",
+                            "status": "Done"
+                        }
+                    ],
+                    "attachments": []
                 }
             ]
         },
