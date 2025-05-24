@@ -114,17 +114,130 @@
                 {
                     "id": "t14",
                     "title": "Setup data pipeline",
-                    "status": "To Do"
+                    "description": "Design and implement ETL pipeline to process marketing data from multiple sources.",
+                    "assignee": "Alice Johnson",
+                    "priority": "High",
+                    "status": "To Do",
+                    "dueDate": "2025-06-05",
+                    "comments": [
+                        {
+                            "author": "Alice Johnson",
+                            "date": "2025-05-15",
+                            "comment": "Waiting for API access credentials from data providers."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st14-1",
+                            "title": "Define data sources",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st14-2",
+                            "title": "Create ETL scripts",
+                            "status": "To Do"
+                        }
+                    ],
+                    "attachments": [
+                        {
+                            "filename": "data_pipeline_design.docx",
+                            "url": "https://marketflow.com/docs/data_pipeline_design.docx"
+                        }
+                    ]
                 },
                 {
                     "id": "t15",
                     "title": "Build campaign overview page",
-                    "status": "In Progress"
+                    "description": "Create dashboard page summarizing all active marketing campaigns with KPIs and charts.",
+                    "assignee": "Bob Smith",
+                    "priority": "Medium",
+                    "status": "In Progress",
+                    "dueDate": "2025-05-30",
+                    "comments": [
+                        {
+                            "author": "Bob Smith",
+                            "date": "2025-05-20",
+                            "comment": "Initial layout completed; working on data binding now."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st15-1",
+                            "title": "Design UI wireframe",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st15-2",
+                            "title": "Implement frontend components",
+                            "status": "In Progress"
+                        }
+                    ],
+                    "attachments": []
                 },
                 {
                     "id": "t16",
                     "title": "Generate analytics reports",
-                    "status": "To Do"
+                    "description": "Develop functionality to export campaign performance reports in PDF and Excel formats.",
+                    "assignee": "Carol Lee",
+                    "priority": "High",
+                    "status": "To Do",
+                    "dueDate": "2025-06-10",
+                    "comments": [],
+                    "subtasks": [
+                        {
+                            "id": "st16-1",
+                            "title": "Define report templates",
+                            "status": "To Do"
+                        }
+                    ],
+                    "attachments": []
+                },
+                {
+                    "id": "t17",
+                    "title": "Integrate with Google Analytics",
+                    "description": "Connect MarketFlow app to Google Analytics API to fetch real-time data.",
+                    "assignee": "David Kim",
+                    "priority": "High",
+                    "status": "In Development",
+                    "dueDate": "2025-06-01",
+                    "comments": [
+                        {
+                            "author": "David Kim",
+                            "date": "2025-05-22",
+                            "comment": "OAuth flow implemented, testing data fetching."
+                        }
+                    ],
+                    "subtasks": [
+                        {
+                            "id": "st17-1",
+                            "title": "Setup OAuth 2.0",
+                            "status": "Done"
+                        },
+                        {
+                            "id": "st17-2",
+                            "title": "Fetch real-time metrics",
+                            "status": "In Progress"
+                        }
+                    ],
+                    "attachments": []
+                },
+                {
+                    "id": "t18",
+                    "title": "Optimize UI/UX",
+                    "description": "Refine user interface and user experience based on user feedback and usability tests.",
+                    "assignee": "Emma Garcia",
+                    "priority": "Low",
+                    "status": "Done",
+                    "dueDate": "2025-05-15",
+                    "comments": [
+                        {
+                            "author": "Emma Garcia",
+                            "date": "2025-05-10",
+                            "comment": "Improved navigation and fixed responsiveness issues."
+                        }
+                    ],
+                    "subtasks": [],
+                    "attachments": []
                 }
             ]
         }

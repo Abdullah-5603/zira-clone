@@ -2,15 +2,14 @@ import React from "react";
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
 import "./styles.scss";
 import { CardHorizontal } from "./Boardcard";
+import { getProjects } from "../../utils/fetchFuncs";
 
 const Board = () => {
 
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch('public/data.json')
-      .then(res => res.json())
-      .then(setData);
+    getProjects(setData);
   }, []);
 
     if (!data) return <Box p={5}>Loading...</Box>;
