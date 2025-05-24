@@ -1,10 +1,13 @@
 import { Box, Heading, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import TaskModal from '../../components/Modal/Modal';
 
 const Projects = () => {
   const { id } = useParams();
   const [data, setData] = React.useState(null);
+  const [open, setOpen] = React.useState(false);
+  const [task, setTask] = React.useState(false);
 
   React.useEffect(() => {
     async function fetchProject() {
@@ -44,15 +47,15 @@ const Projects = () => {
         overflowX="auto"
         gap={6}
         p={4}
-        borderRadius="md"
-        boxShadow="md"
-        css={{
-          scrollbarWidth: 'thin',
-          scrollbarColor: '#CBD5E0 transparent', // gray.300 & transparent
-          '&::-webkit-scrollbar': { height: '8px' },
-          '&::-webkit-scrollbar-thumb': { backgroundColor: '#A0AEC0', borderRadius: '24px' },
-          '&::-webkit-scrollbar-track': { backgroundColor: 'transparent' },
-        }}
+        // borderRadius="md"
+        // boxShadow="md"
+        // css={{
+        //   scrollbarWidth: 'thin',
+        //   scrollbarColor: '#CBD5E0 transparent', // gray.300 & transparent
+        //   '&::-webkit-scrollbar': { height: '8px' },
+        //   '&::-webkit-scrollbar-thumb': { backgroundColor: '#A0AEC0', borderRadius: '24px' },
+        //   '&::-webkit-scrollbar-track': { backgroundColor: 'transparent' },
+        // }}
       >
         {statuses.map((status) => (
           <Box
@@ -78,6 +81,10 @@ const Projects = () => {
                   borderRadius="md"
                   boxShadow="sm"
                   _hover={{ boxShadow: 'lg', cursor: 'pointer' }}
+                  onClick={() => {
+                      setOpen(true)
+                      setTask(task)
+                  }}
                 >
                   <Text fontWeight="semibold" textAlign={'center'}>{task.title}</Text>
                 </Box>
@@ -86,6 +93,8 @@ const Projects = () => {
           </Box>
         ))}
       </Box>
+
+      <TaskModal isOpen={open}  onClose={() => setOpen(false)} task={task}/>
     </Box>
   );
 };
