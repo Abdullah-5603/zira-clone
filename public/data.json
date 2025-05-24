@@ -1,37 +1,132 @@
 {
-  "users": [
-    {
-      "id": "u1",
-      "username": "admin",
-      "password": "1234"
-    }
-  ],
-  "projects": [
-    {
-      "id": "p1",
-      "name": "Zira Project",
-      "tasks": [
+    "name": "Zira Clone",
+    "users": [
         {
-          "id": "t1",
-          "title": "Build Login",
-          "status": "To Do"
-        },
-        {
-          "id": "t2",
-          "title": "Create Board UI",
-          "status": "In Progress"
-        },
-        {
-          "id": "t3",
-          "title": "Test localStorage logic",
-          "status": "Done"
-        },
-        {
-          "id": "t4",
-          "title": "Refactor Sass styles",
-          "status": "In Progress"
+            "id": "u1",
+            "username": "admin",
+            "password": "1234"
         }
-      ]
-    }
-  ]
+    ],
+    "projects": [
+        {
+            "id": "p1",
+            "name": "Zira Project",
+            "description": "This is a sample project",
+            "demoImage": "https://netlify.apollo.io/_next/image?url=https%3A%2F%2Fnetlify.apollo.io%2F_next%2Fstatic%2Fmedia%2Fdesktop.9df16101.jpg&w=3840&q=75",
+            "tasks": [
+                {
+                    "id": "t1",
+                    "title": "Build Login",
+                    "status": "To Do"
+                },
+                {
+                    "id": "t2",
+                    "title": "Create Board UI",
+                    "status": "In Progress"
+                },
+                {
+                    "id": "t3",
+                    "title": "Test localStorage logic",
+                    "status": "Done"
+                },
+                {
+                    "id": "t4",
+                    "title": "Refactor Sass styles",
+                    "status": "In Progress"
+                }
+            ]
+        },
+        {
+            "id": "p2",
+            "name": "Apollo CRM",
+            "description": "Customer Relationship Management app for sales teams",
+            "demoImage": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=60",
+            "tasks": [
+                {
+                    "id": "t5",
+                    "title": "Design dashboard layout",
+                    "status": "To Do"
+                },
+                {
+                    "id": "t6",
+                    "title": "Integrate REST API",
+                    "status": "In Progress"
+                },
+                {
+                    "id": "t7",
+                    "title": "Add lead import feature",
+                    "status": "To Do"
+                }
+            ]
+        },
+        {
+            "id": "p3",
+            "name": "EduTrack LMS",
+            "description": "Learning management system for educational institutions",
+            "demoImage": "https://edutrackindia.com/assets/img/Edutrack-header-V2.jpg",
+            "tasks": [
+                {
+                    "id": "t8",
+                    "title": "Build student dashboard",
+                    "status": "Done"
+                },
+                {
+                    "id": "t9",
+                    "title": "Implement quiz module",
+                    "status": "In Progress"
+                },
+                {
+                    "id": "t10",
+                    "title": "Setup database schema",
+                    "status": "Done"
+                }
+            ]
+        },
+        {
+            "id": "p4",
+            "name": "FitLife App",
+            "description": "A fitness tracking mobile application",
+            "demoImage": "https://play-lh.googleusercontent.com/GPjKeahj1-D5lkV_HSSB9PQIBgrcsHsbkEGlfeOexS6BsYY69A2mOuLKUYT2LPtFuA",
+            "tasks": [
+                {
+                    "id": "t11",
+                    "title": "Develop workout tracker",
+                    "status": "To Do"
+                },
+                {
+                    "id": "t12",
+                    "title": "Create user profile page",
+                    "status": "In Progress"
+                },
+                {
+                    "id": "t13",
+                    "title": "Test daily goals notification",
+                    "status": "Done"
+                }
+            ]
+        },
+        {
+            "id": "p5",
+            "name": "MarketFlow Analytics",
+            "description": "Web app for tracking marketing campaigns",
+            "demoImage": "https://marketflow.com/wp-content/uploads/brizy/imgs/marketflow-illustration-1-no-shadow-700x948x0x0x700x948x1710485481.png",
+            "tasks": [
+                {
+                    "id": "t14",
+                    "title": "Setup data pipeline",
+                    "status": "To Do"
+                },
+                {
+                    "id": "t15",
+                    "title": "Build campaign overview page",
+                    "status": "In Progress"
+                },
+                {
+                    "id": "t16",
+                    "title": "Generate analytics reports",
+                    "status": "To Do"
+                }
+            ]
+        }
+    ]
 }

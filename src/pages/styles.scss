@@ -1,0 +1,10 @@
+.board-container {
+  background: white;
+  min-height: 100vh;
+
+  &__columns{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+}
