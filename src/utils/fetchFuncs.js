@@ -1,15 +1,18 @@
-export async function getProjects(setData) {
-   await fetch('public/data.json')
+export function getProjects(setData) {
+    fetch('data.json')
         .then(res => res.json())
-        .then(setData);
+        .then(data => {
+            console.log({data});
+            setData(data);
+        });
 }
 
 export function getProject(id, setData) {
-  fetch(`public/data.json`)
+    fetch(`data.json`)
         .then(res => res.json())
         .then(data => {
-            const project =data.projects.find(project => project.id === id);
-            console.log({project});
-             setData(project)
+            const project = data.projects.find(project => project.id === id);
+            console.log({ project });
+            setData(project)
         });
 }

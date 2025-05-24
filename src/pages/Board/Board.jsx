@@ -2,14 +2,23 @@ import React from "react";
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
 import "./styles.scss";
 import { CardHorizontal } from "./Boardcard";
-import { getProjects } from "../../utils/fetchFuncs";
 
 const Board = () => {
 
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    getProjects(setData);
+            async function fetchProject() {
+            try {
+                const res = await fetch('data.json');
+                if (!res.ok) throw new Error('Network response was not ok');
+                const jsonData = await res.json();
+                setData(jsonData);
+            } catch (error) {
+                console.error('Fetching error:', error);
+            }
+        }
+        fetchProject();
   }, []);
 
     if (!data) return <Box p={5}>Loading...</Box>;
