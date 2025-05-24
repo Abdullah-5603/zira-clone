@@ -3,7 +3,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { BiArrowFromRight } from 'react-icons/bi';
+import { BiArrowFromRight, BiSort } from 'react-icons/bi';
 import TaskModal from '../../components/Modal/Modal';
 
 import {
@@ -20,8 +20,9 @@ import {
     verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
+import { RiDragMove2Fill } from 'react-icons/ri';
 
-const SortableTaskCard = ({ task, onClick }) => {
+const SortableTaskCard = ({ task, setOpen, setTask, }) => {
     const {
         attributes,
         listeners,
@@ -38,18 +39,31 @@ const SortableTaskCard = ({ task, onClick }) => {
     return (
         <Box
             ref={setNodeRef}
-            {...attributes}
-            {...listeners}
             style={style}
             bg="gray.700"
             p={3}
+            display="flex"
+            alignItems="center"
+            gap={2}
             borderRadius="md"
             boxShadow="sm"
             _hover={{ boxShadow: 'lg', cursor: 'pointer' }}
-            onClick={onClick}
+            onClick={() => {
+                setOpen(true);
+                setTask(task);
+            }}
         >
+            <Box
+                {...attributes}
+                {...listeners}
+                mb={2}
+                _hover={{ cursor: 'move' }}
+            >
+                <Icon as={RiDragMove2Fill} />
+            </Box>
             <Text fontWeight="semibold" textAlign="center">{task.title}</Text>
         </Box>
+
     );
 };
 
@@ -162,10 +176,8 @@ const Projects = () => {
                                         <SortableTaskCard
                                             key={taskItem.id}
                                             task={taskItem}
-                                            onClick={() => {
-                                                setOpen(true);
-                                                setTask(taskItem);
-                                            }}
+                                            setTask={setTask}
+                                            setOpen={setOpen}
                                         />
                                     ))}
                                 </VStack>
